@@ -22,7 +22,6 @@ jobs:
       architectures: ${{ steps.information.outputs.architectures }}
       build: ${{ steps.information.outputs.build }}
       environment: ${{ steps.release.outputs.environment }}
-      signer: ${{ steps.information.outputs.codenotary_signer }}
       slug: ${{ steps.information.outputs.slug }}
       target: ${{ steps.information.outputs.target }}
       version: ${{ steps.release.outputs.version }}
