@@ -1,6 +1,9 @@
 ---
 name: Deploy
 
+concurrency:
+  group: queue
+  
 # yamllint disable-line rule:truthy
 on:
   workflow_call:
